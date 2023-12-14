@@ -41,7 +41,7 @@
 				<p class="lets">Let's do this!</p>
 
 				<div>
-					<form action="#">
+					<form action="#" method="get">
 						<div
 							style="
 								float: left;
@@ -58,6 +58,8 @@
 								type="text"
 								name="first-name"
 								id="first-name"
+								placeholder="John"
+								minlength="2"
 							/>
 						</div>
 
@@ -72,6 +74,8 @@
 								type="text"
 								name="surname"
 								id="surname"
+								placeholder="Smith"
+								minlength="2"
 							/>
 						</div>
 						<br />
@@ -91,6 +95,7 @@
 								type="email"
 								name="email"
 								id="email"
+								placeholder="name@example.com"
 							/>
 						</div>
 
@@ -102,9 +107,12 @@
 							<input
 								required
 								class="gradient"
-								type="tel"
+								type="text"
+								pattern="[0-9]{10,11}"
+								title="Please enter your phone number with or without the initial zero"
 								name="phone-no"
 								id="phone-no"
+								placeholder="08012345678"
 							/>
 						</div>
 						<br />
@@ -122,6 +130,7 @@
 								required
 								class="gradient"
 								type="password"
+								pattern="^1234$"
 								name="pwd"
 								id="pwd"
 							/>
@@ -136,13 +145,16 @@
 								required
 								class="gradient"
 								type="password"
+								pattern="^1234$"
 								name="cpwd"
 								id="cpwd"
 							/>
 						</div>
-						<br />
+						<br /><button type="submit">
+							Create Account
+						</button>
 					</form>
-					<button>Create Account</button>
+
 					<p>
 						Already have an account?
 						<a href="#">Log in</a>

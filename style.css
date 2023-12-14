@@ -33,6 +33,7 @@ img {
 	background-color: var(--main-bg);
 	display: flex;
 	max-width: 100%;
+	margin-top: 50px;
 	padding: 30px;
 }
 
@@ -69,7 +70,19 @@ input {
 	margin-bottom: 20px;
 	outline: none;
 	font-size: large;
+	padding-left: 3px;
 	border: 2px solid rgb(217, 217, 217);
+}
+
+input::placeholder {
+	color: #adaeb1;
+	font-style: italic;
+	padding-left: 3px;
+}
+
+input:valid {
+	border: 2px solid green;
+	background-color: rgb(217, 250, 205);
 }
 
 input:focus {
@@ -84,6 +97,7 @@ label {
 
 button {
 	height: 45px;
+	margin-top: 50px;
 	width: 250px;
 	border-radius: 5px;
 	border-style: none;
@@ -91,6 +105,10 @@ button {
 	font-weight: bolder;
 	font-size: large;
 	color: white;
+}
+
+button:hover {
+	background-color: #5d9fff;
 }
 
 a {
