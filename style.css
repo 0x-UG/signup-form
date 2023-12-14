@@ -34,7 +34,6 @@ img {
 	display: flex;
 	max-width: 100%;
 	margin-top: 50px;
-	padding: 30px;
 }
 
 label,
@@ -67,7 +66,7 @@ input {
 	box-sizing: border-box;
 	border: 1px solid #e5e7eb;
 	-webkit-transition: 0.5s;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	outline: none;
 	font-size: large;
 	padding-left: 3px;
@@ -97,7 +96,7 @@ label {
 
 button {
 	height: 45px;
-	margin-top: 50px;
+	margin-top: 10px;
 	width: 250px;
 	border-radius: 5px;
 	border-style: none;
@@ -115,6 +114,15 @@ a {
 	text-decoration: none;
 }
 
-button + p {
-	font-size: larger;
+form + p {
+	font-size: 1.2rem;
+}
+
+footer {
+	font-size: var(--x-large);
+	margin: 0px;
+}
+
+footer > p > a {
+	text-decoration: underline;
 }
