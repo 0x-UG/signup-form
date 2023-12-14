@@ -60,17 +60,24 @@ br {
 
 input {
 	border-radius: 5px;
-	height: 30px;
+	height: 40px;
 	width: 300px;
-	border-style: none;
+	box-sizing: border-box;
+	border: 1px solid #e5e7eb;
+	-webkit-transition: 0.5s;
 	margin-bottom: 20px;
+	outline: none;
+	font-size: large;
+}
+
+input:focus {
+	border: 2px solid #0e479d;
+}
+.gradient:valid {
 }
 
 label {
-	font-size: small;
+	font-size: smaller;
 	font-weight: var(--bolder);
 	text-transform: uppercase;
-}
-
-label:focus {
 }
