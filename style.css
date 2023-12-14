@@ -21,18 +21,19 @@ body {
 }
 
 section {
-	padding: 1rem 3rem;
+	padding: 0 3rem;
+	margin-top: p;
 }
 
 img {
 	width: 80vh;
-	background-color: grey;
 }
 
 .container {
 	background-color: var(--main-bg);
 	display: flex;
 	max-width: 100%;
+	padding: 30px;
 }
 
 label,
@@ -68,16 +69,34 @@ input {
 	margin-bottom: 20px;
 	outline: none;
 	font-size: large;
+	border: 2px solid rgb(217, 217, 217);
 }
 
 input:focus {
 	border: 2px solid #0e479d;
-}
-.gradient:valid {
 }
 
 label {
 	font-size: smaller;
 	font-weight: var(--bolder);
 	text-transform: uppercase;
+}
+
+button {
+	height: 45px;
+	width: 250px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #3082fd;
+	font-weight: bolder;
+	font-size: large;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+button + p {
+	font-size: larger;
 }
