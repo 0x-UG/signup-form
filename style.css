@@ -92,6 +92,11 @@ label {
 	font-size: smaller;
 	font-weight: var(--bolder);
 	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+
+.right {
+	margin-left: 40px;
 }
 
 button {
