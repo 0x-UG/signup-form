@@ -1,44 +1,76 @@
 :root {
-	--main-bg: radial-gradient(
-		circle at 10% 20%,
-		rgb(142, 224, 251) 0%,
-		rgb(255, 121, 225) 100.7%
+	--main-bg: linear-gradient(
+		-225deg,
+		#5d9fff 0%,
+		#b8dcff 48%,
+		#6bbbff 100%
 	);
+
+	--font: "Inter", sans-serif;
+	--bolder: bolder;
+	--x-large: x-large;
 }
 
 body {
 	background: var(--main-bg);
-	font-family: "Inter", sans-serif;
+	font-family: var(--font);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100vh;
+}
+
+section {
+	padding: 1rem 3rem;
 }
 
 img {
-	width: 60vh;
+	width: 80vh;
 	background-color: grey;
 }
 
-main,
-.image-container {
-	border-radius: 1rem;
-}
-
 .container {
-	background-color: white;
+	background-color: var(--main-bg);
 	display: flex;
-	max-width: 70%;
+	max-width: 100%;
 }
 
 label,
 input {
-	display: block;
+	display: flex;
 }
 
 br {
 	clear: both;
 }
 
-form {
-	background-color: grey;
+.intro-text {
+	font-weight: 700;
+	font-size: var(--x-large);
+}
+
+.mid-text {
+	font-size: var(--x-large);
+}
+
+.lets {
+	margin-bottom: 0.5rem;
+	font-weight: var(--bolder);
+}
+
+input {
+	border-radius: 5px;
+	height: 30px;
+	width: 300px;
+	border-style: none;
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: small;
+	font-weight: var(--bolder);
+	text-transform: uppercase;
+}
+
+label:focus {
 }
